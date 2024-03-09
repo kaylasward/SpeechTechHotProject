@@ -62,7 +62,7 @@ def split_audio(path_to_audio, clip_data, type):
             FRIC_AUDIO_FILES_DIR
             / f"{clip_data['word']}_{clip_data['speaker']}_{clip_data['hotneutral']}.wav"
         )
-    # Uncomment the next line to export segments ##TODO ##TODO ##TODO ##TODO ##TODO ##TODO ##TODO ##TODO ##TODO
+    # Uncomment the next line to export segments
     audio_file_segment.export(new_audio_path, format="WAV")
     return new_audio_path
 

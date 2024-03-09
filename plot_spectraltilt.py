@@ -32,6 +32,14 @@ obstruents = {
         "SL (SWE) Hot": "./audio_files/frics/before_SL_hot.wav",
         "SL (SWE) Neutral": "./audio_files/frics/before_SL_neutral.wav",
     },
+    # "e-before": {
+    #     "KS (ENG) Hot": "./audio_files/vowels/that_KS_hot.wav",
+    #     "KS (ENG) Neutral": "./audio_files/vowels/that_KS_neutral.wav",
+    #     "SD (IT) Hot": "./audio_files/vowels/that_SD_hot.wav",
+    #     "SD (IT) Neutral": "./audio_files/vowels/that_SD_neutral.wav",
+    #     "SL (SWE) Hot": "./audio_files/vowels/that_SL_hot.wav",
+    #     "SL (SWE) Neutral": "./audio_files/vowels/that_SL_neutral.wav",
+    # },
 }
 
 
@@ -105,7 +113,7 @@ def plot_obstruent(obstruent_data, obstruent_label):
             linestyle=styles[idx % 2],
         )
 
-    plt.title(f"Spectral Tilt Comparison of the '{obstruent_label.split("-")[0]}' in '{obstruent_label.split("-")[1]}' between a Hot and Neutral Temperature Room")
+    plt.title(f"Spectral Tilt Comparison of /{obstruent_label.split("-")[0]}/ in '{obstruent_label.split("-")[1]}' between a Hot and Neutral Temperature Room")
     plt.xlabel("Frequency [Hz]")
     plt.ylabel("PSD [dB/Hz]")
     plt.xscale("log")
